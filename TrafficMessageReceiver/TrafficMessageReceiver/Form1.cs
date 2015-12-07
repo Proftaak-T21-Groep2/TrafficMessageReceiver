@@ -15,7 +15,6 @@ namespace TrafficMessageReceiver2
     public partial class Form1 : Form
     {
         // proxy om de TrafficMessageService te gebruiken
-
         private TrafficMessageService.TrafficMessageClient myTrafficMessageProxy;
         private int sendTo;
         private int retrieveFrom;
