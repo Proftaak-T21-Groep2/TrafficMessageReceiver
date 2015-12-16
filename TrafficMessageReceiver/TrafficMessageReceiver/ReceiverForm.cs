@@ -58,7 +58,7 @@ namespace TrafficMessageReceiver2
   
                         if (splitstring.Length == 3)
                         {
-                            myTrafficMessageProxy.SendMessage(GetCarFromRDW(incomingmessage), sendTo);
+                            myTrafficMessageProxy.SendMessage("$" + GetCarFromRDW(incomingmessage), sendTo);
                         }
                  
            }
@@ -109,11 +109,6 @@ namespace TrafficMessageReceiver2
             {
                 return "not found";
             }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show(GetCarFromRDW("11-KTF-6"));
         }
     }
 }
