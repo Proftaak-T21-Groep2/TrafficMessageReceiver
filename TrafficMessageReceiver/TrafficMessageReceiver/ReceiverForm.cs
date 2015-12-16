@@ -12,14 +12,14 @@ using System.ServiceModel;
 
 namespace TrafficMessageReceiver2
 {
-    public partial class Form1 : Form
+    public partial class ReceiverForm : Form
     {
         // proxy om de TrafficMessageService te gebruiken
         private TrafficMessageService.TrafficMessageClient myTrafficMessageProxy;
         private int sendTo;
         private int retrieveFrom;
         
-        public Form1()
+        public ReceiverForm()
         {
             InitializeComponent();
 
@@ -58,7 +58,7 @@ namespace TrafficMessageReceiver2
   
                         if (splitstring.Length == 3)
                         {
-                            myTrafficMessageProxy.SendMessage(" ," + GetCarFromRDW(incomingmessage), sendTo);
+                            myTrafficMessageProxy.SendMessage(GetCarFromRDW(incomingmessage), sendTo);
                         }
                  
            }

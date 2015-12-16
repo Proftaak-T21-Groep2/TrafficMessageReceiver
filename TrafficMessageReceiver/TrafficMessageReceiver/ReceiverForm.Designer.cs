@@ -1,6 +1,6 @@
 ﻿namespace TrafficMessageReceiver2
 {
-    partial class Form1
+    partial class ReceiverForm
     {
         /// <summary>
         /// Required designer variable.
