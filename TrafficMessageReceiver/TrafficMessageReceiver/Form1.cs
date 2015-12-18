@@ -30,7 +30,7 @@ namespace TrafficMessageReceiver2
             
             myTrafficMessageProxy = new TrafficMessageReceiver2.TrafficMessageService.TrafficMessageClient();
 
-            EndpointAddress endPointAddress = new EndpointAddress("http://" + serveradress + "/MessageService");
+            EndpointAddress endPointAddress = new EndpointAddress("http://" + serveradress + ":90" + "/MessageService");
 
             myTrafficMessageProxy.Endpoint.Address = endPointAddress;
 
@@ -58,7 +58,7 @@ namespace TrafficMessageReceiver2
   
                         if (splitstring.Length == 3)
                         {
-                            myTrafficMessageProxy.SendMessage(" ," + GetCarFromRDW(incomingmessage), sendTo);
+                            myTrafficMessageProxy.SendMessage( GetCarFromRDW(incomingmessage), sendTo);
                         }
                  
            }
