@@ -58,6 +58,7 @@ namespace TrafficMessageReceiver2
   
                         if (splitstring.Length == 3)
                         {
+
                             myTrafficMessageProxy.SendMessage("$" + GetCarFromRDW(incomingmessage), sendTo);
                         }
                  
@@ -112,3 +113,4 @@ namespace TrafficMessageReceiver2
         }
     }
 }
+    
